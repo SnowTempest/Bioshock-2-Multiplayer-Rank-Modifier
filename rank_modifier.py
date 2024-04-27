@@ -93,7 +93,7 @@ def options():
         fix_rank()
         custom_rank()
         print(f"\nRank {DIRECTORY.CUSTOM_RANK} has been applied to dlc2unlocks.ini.")
-        print(f"Please Play 1 Private Match or 1 Public Match to Reach Rank {DIRECTORY.CUSTOM_RANK}.")
+        print(f"Please get {DIRECTORY.CUSTOM_RANK} Adam from either Private Matches or Public Matches to Reack Rank {DIRECTORY.CUSTOM_RANK}.")
     elif user_choice == 3:
         default_rank()
         print("\nDefault mRankAdamRequirements has been restored for ShockMPGAME.ini, dlc1unlocks.ini and dlc2unlocks.ini.")
@@ -145,11 +145,11 @@ def custom_rank():
             try:
                 print("\nWhat Rank Do You Want to Be: ")
                 DIRECTORY.CUSTOM_RANK = int(input())
-                if DIRECTORY.CUSTOM_RANK < DLC_MIN_RANK or DIRECTORY.CUSTOM_RANK > 100:
+                if DIRECTORY.CUSTOM_RANK < DLC_MIN_RANK or DIRECTORY.CUSTOM_RANK > 1000:
                     raise ValueError
                 break 
             except ValueError:
-                print("Error Invalid Rank: Please enter a NUMERICAL value between [" + str(DLC_MIN_RANK) + " - 100]\n")
+                print("Error Invalid Rank: Please enter a NUMERICAL value between [" + str(DLC_MIN_RANK) + " - 1000]\n")
 
         with open(DIRECTORY.DLC2, "r")  as f:
             file_content = f.readlines()

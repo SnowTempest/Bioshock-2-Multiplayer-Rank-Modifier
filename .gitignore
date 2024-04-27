@@ -1,4 +1,5 @@
 # Ignore
 *.bat
 /dist
+/build
 *.spec
