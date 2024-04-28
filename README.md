@@ -7,7 +7,7 @@ The Bioshock 2 Multiplayer Rank Modifier is a program designed to allow User's t
 ## Features
 
 - **Rank Fix**: Automatically adjusts User's mRankAdamRequirements to reach Rank 50 after completing either 1 Public Match or 1 Private Match.
-- **Custom Ranks**: Sets a Custom Rank for the User. Up to Rank 100.
+- **Custom Ranks**: Sets a Custom Rank for the User. Up to Rank 1000. (May Most Likely Be Changed in the Future)
 - **Default Rank**: Reverts the mRankAdamRequirements back to their default values. Note: This will reset the User's Rank to 50.
 
 ## Disclaimer
