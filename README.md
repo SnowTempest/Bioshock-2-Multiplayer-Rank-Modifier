@@ -31,9 +31,16 @@ The Bioshock 2 Multiplayer Rank Modifier is a program designed to allow User's t
 5. **Restart Game**: Restart Bioshock 2 Multiplayer to apply the changes.
 
 ## Screenshots
+
+### Rank Fix
 ![Rank Fix](https://github.com/SnowTempest/Bioshock-2-Multiplayer-Rank-Modifier/blob/main/Screenshots/rankfix.png)
+
+### Custom Rank
+
 ![Custom Rank](https://github.com/SnowTempest/Bioshock-2-Multiplayer-Rank-Modifier/blob/main/Screenshots/customrank.png)
 ![Custom Rank In-Game](https://github.com/SnowTempest/Bioshock-2-Multiplayer-Rank-Modifier/blob/main/Screenshots/level100.jpg)
+
+### Restore Defaults
 ![Restore Defaults](https://github.com/SnowTempest/Bioshock-2-Multiplayer-Rank-Modifier/blob/main/Screenshots/default.png)
 
 ## Libraries
