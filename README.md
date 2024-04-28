@@ -10,6 +10,12 @@ The Bioshock 2 Multiplayer Rank Modifier is a program designed to allow User's t
 - **Custom Ranks**: Sets a Custom Rank for the User. Up to Rank 100.
 - **Default Rank**: Reverts the mRankAdamRequirements back to their default values. Note: This will reset the User's Rank to 50.
 
+## Disclaimer
+
+- Please note that using Custom Ranks will not provide you with any gameplay advantage. Ranks exceeding 50 are purely cosmetic and do not affect gameplay in any way.
+- Other players can see your Custom Rank. If you prefer not to display a Rank higher than 50, utilize the Rank Fix feature to reset your Rank back to 50.
+- Custom Ranks do not unlock any additional content beyond what is available through normal gameplay. All unlocks are typically accessible once the player reaches Rank 50.
+
 ## Modified Files
 
 - **ShockMPGame.ini**: This file is used to determine the mRankAdamRequirements for Ranks 0 - 40.
@@ -23,6 +29,12 @@ The Bioshock 2 Multiplayer Rank Modifier is a program designed to allow User's t
 3. **Game Preparation**: Open Bioshock 2 Multiplayer to ensure the game files are located.
 4. **Follow Prompts**: Continue following the prompts until the program completes its tasks.
 5. **Restart Game**: Restart Bioshock 2 Multiplayer to apply the changes.
+
+## Screenshots
+![Rank Fix](https://github.com/your_username/your_repository/blob/main/screenshots/screenshot1.png)
+![Custom Rank](https://github.com/your_username/your_repository/blob/main/screenshots/screenshot2.png)
+![Custom Rank In-Game](https://github.com/your_username/your_repository/blob/main/screenshots/screenshot1.png)
+![Restore Defaults](https://github.com/your_username/your_repository/blob/main/screenshots/screenshot2.png)
 
 ## Libraries
 

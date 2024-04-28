@@ -93,7 +93,7 @@ def options():
         fix_rank()
         custom_rank()
         print(f"\nRank {DIRECTORY.CUSTOM_RANK} has been applied to dlc2unlocks.ini.")
-        print(f"Please get {DIRECTORY.CUSTOM_RANK} Adam from either Private Matches or Public Matches to Reack Rank {DIRECTORY.CUSTOM_RANK}.")
+        print(f"Please Play in a few Private or Public Matches to get to Rank {DIRECTORY.CUSTOM_RANK}.")
     elif user_choice == 3:
         default_rank()
         print("\nDefault mRankAdamRequirements has been restored for ShockMPGAME.ini, dlc1unlocks.ini and dlc2unlocks.ini.")
@@ -141,6 +141,7 @@ def fix_rank():
 def custom_rank():
     try:
         starting_rank = 40
+        padding = 0
         while True:
             try:
                 print("\nWhat Rank Do You Want to Be: ")
@@ -154,7 +155,8 @@ def custom_rank():
         with open(DIRECTORY.DLC2, "r")  as f:
             file_content = f.readlines()
         
-        file_content = update_adam_requirements(DIRECTORY.CUSTOM_RANK - starting_rank, file_content)
+        padding = (DIRECTORY.CUSTOM_RANK) // 500
+        file_content = update_adam_requirements((DIRECTORY.CUSTOM_RANK - starting_rank) + padding, file_content)
 
         with open(DIRECTORY.DLC2, "w") as f:
             f.writelines(file_content)
@@ -199,7 +201,7 @@ def update_adam_requirements(target_amount, file_content):
             requirements_count += 1
             last_index = i
             last_adam_amount = int(file_content[i].split("=")[-1].strip())
-
+        
     if requirements_count < target_amount:
         add_amount = target_amount - requirements_count
         file_content = add_adam_requirements(requirements_count, add_amount, file_content, last_index, last_adam_amount)
